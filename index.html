@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Nathan Quinn - Final Yahtzee</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="script.js">
+
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1 id="mainHeader">Yahtzee</h1>
+	<div id="paddingDiv">
+		<div id="mainDiv">
+			<table>
+				<tr>
+					<th class="dieLabel">Die One</th>
+					<th class="dieLabel">Die Two</th>
+					<th class="dieLabel">Die Three</th>
+					<th class="dieLabel">Die Four</th>
+					<th class="dieLabel">Die Five</th>
+				</tr>
+				<tr>
+					<td>
+						<img id="die1" src="images/blank_die.png">
+        </td>
+        <td>
+        <img id="die2" src="images/blank_die.png">
+        </td>
+        <td>
+        <img id="die3" src="images/blank_die.png">
+        </td>
+        <td>
+        <img id="die4" src="images/blank_die.png">
+        </td>
+        <td>
+        <img id="die5" src="images/blank_die.png">
+        </td>
+      </tr>
+
+      <tr>
+        <td><button id="hold1" onclick="holdDie(1)">Hold Die 1</button></td>
+        <td><button id="hold2" onclick="holdDie(2)">Hold Die 2</button></td>
+        <td><button id="hold3" onclick="holdDie(3)">Hold Die 3</button></td>
+        <td><button id="hold4" onclick="holdDie(4)">Hold Die 4</button></td>
+        <td><button id="hold5" onclick="holdDie(5)">Hold Die 5</button></td>
+    </tr>
+    </table>
+ <br>
+<br>
+ <hr>
+ <br>
+<br>
+    <button id="rollButton" onclick="rollDie()">Roll Die</button>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+    <table style="width:70%">
+      <tr>
+        <td><button id="scoreButtons1" onclick="scoreTotal(1)">Score Ones</button></td>
+        <td><button id="scoreButtons2" onclick="scoreTotal(2)">Score Twos</button></td>
+        <td><button id="scoreButtons3" onclick="scoreTotal(3)">Score Threes</button></td>
+        <td><button id="scoreButtons4" onclick="scoreTotal(4)">Score Fours</button></td>
+        <td><button id="scoreButtons5" onclick="scoreTotal(5)">Score Fives</button></td>
+        <td><button id="scoreButtons6" onclick="scoreTotal(6)">Score Sixes</button></td>
+      </tr>
+      <tr>
+        <th class="scoreLabel">Ones</th>
+        <th class="scoreLabel">Twos</th>
+        <th class="scoreLabel">Threes</th>
+        <th class="scoreLabel">Fours</th>
+        <th class="scoreLabel">Fives</th>
+        <th class="scoreLabel">Sixes</th>
+      </tr>
+      <tr>
+        <td><br></td>
+      </tr>
+      <tr>
+        <td class="scores" id="score1">0</td>
+        <td class="scores" id="score2">0</td>
+        <td class="scores" id="score3">0</td>
+        <td class="scores" id="score4">0</td>
+        <td class="scores" id="score5">0</td>
+        <td class="scores" id="score6">0</td>
+      </tr>
+    </table>
+    <p id="finalScore">
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  </body>
+</html>
